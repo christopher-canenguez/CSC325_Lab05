@@ -8,7 +8,7 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author MoaathAlrajab
  */
-public class MainClass {
+public class MainClass { 
 	
 	public static void main(String[] args) {
 		// ToDo 5: Fix the error
