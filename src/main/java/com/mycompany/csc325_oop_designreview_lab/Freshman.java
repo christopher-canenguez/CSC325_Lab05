@@ -36,5 +36,17 @@ class Freshman extends Student
         this.credits = credits;
     }
     
-    
+    /**
+     * toString - description of object.
+     */
+    public String toString()
+    {
+        String result = "";
+        result = "Name: " + this.getName() + "\n" + 
+                "Age: " + this.getAge() + "\n" + 
+                "Credits: " + this.getCredits() + "\n" +
+                "Grade: Freshman" + "\n";
+        
+        return result;
+    }
 }
