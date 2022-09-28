@@ -1,14 +1,18 @@
 
 package com.mycompany.csc325_oop_designreview_lab;
-
 /**
  *
  * @author MoaathAlrajab
  */
 public class Student extends Human
 {
-
     private int gpa;
+    
+    public Student(String name, short age, int gpa)
+    {
+        super(name, age);
+        this.gpa = gpa;
+    }
     
     @Override
     /**
