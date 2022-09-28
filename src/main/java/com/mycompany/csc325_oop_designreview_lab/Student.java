@@ -8,11 +8,11 @@ public class Student extends Human
 {
     private int gpa;
     
-    public Student(String name, short age, int gpa)
+    public Student(String name, short age)
     {
         super(name, age);
-        this.gpa = gpa;
-    }
+        this.gpa = 0;
+    } // End constructor.
     
     @Override
     /**
