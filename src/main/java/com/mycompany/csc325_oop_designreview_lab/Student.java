@@ -9,27 +9,42 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author MoaathAlrajab
  */
-public class Student extends Human{
+public class Student extends Human
+{
 
     private int gpa;
     
     @Override
+    /**
+     * getAddress - returns the address of the Student.
+     */
     public String getAddress() 
     {
         return this.address;
     }
 
     @Override
+    /**
+     * setAddress - allows you update the address of the student.
+     */
     public void setAddress(String address) 
     {
         this.address = address;
     }
     
+    /**
+     * getGpa - returns the Gpa of the Student.
+     * @return int
+     */
     public int getGpa() 
     {
         return gpa;
     }
 
+    /**
+     * setGpa - updates the Gpa of the Student.
+     * @param gpa 
+     */
     public void setGpa(int gpa) 
     {
         this.gpa = gpa;
