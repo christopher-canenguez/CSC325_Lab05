@@ -14,19 +14,21 @@ public class Student extends Human
         this.gpa = 0;
     } // End constructor.
     
-    @Override
     /**
      * getAddress - returns the address of the Student.
+     * @return 
      */
+    @Override
     public String getAddress() 
     {
         return this.address;
     } // End getAddress.
 
-    @Override
     /**
      * setAddress - allows you update the address of the student.
+     * @param address
      */
+    @Override
     public void setAddress(String address) 
     {
         this.address = address;
@@ -55,6 +57,5 @@ public class Student extends Human
 	
 	// ToDo 3: Add a field for GPA and create setter and getter - Completed.
 	
-	// ToDo 4: Add comments to your code
-    
-} // End Student.
+	// ToDo 4: Add comments to your code - Completed.
+} // End Student class.

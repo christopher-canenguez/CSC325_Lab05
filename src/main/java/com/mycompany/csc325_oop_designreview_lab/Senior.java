@@ -11,6 +11,8 @@ import java.util.Scanner;
 class Senior extends Student
 {
     private int credits;
+    
+    // Create scanner object.
     Scanner scanner = new Scanner(System.in);
     
     public Senior(String name, short age, int credits)
@@ -26,7 +28,7 @@ class Senior extends Student
     public int getCredits() 
     {
         return credits;
-    }
+    } // End getCredits.
 
     /**
      * setCredits - updates the number of credits the Student currently has.
@@ -35,25 +37,30 @@ class Senior extends Student
     public void setCredits(int credits) 
     {
         this.credits = credits;
-    }
+    } // End setCredits.
     
     /**
      * toString - description of object.
      */
+    @Override
     public String toString()
     {
         System.out.println(this.getName() + ", what is your GPA? Please enter here: ");
         
+        // Hold integer that user enters.
         int gpa = (int) scanner.nextInt();
         
+        // While loop that will continue to ask the user for a GPA
+        // Until a valid integer from zero to 100 is entered.
         while (gpa < 0 || gpa > 100)
         {
             System.out.println("Ooops, you've entered an invalid integer, please enter again: ");
             gpa = scanner.nextInt();
-        }
+        } // End while loop.
         
-        System.out.println();
+        System.out.println(); // Empty line.
         
+        // Update GPA.
         this.setGpa(gpa);
         
         String result = "";
@@ -61,8 +68,8 @@ class Senior extends Student
                 "Age: " + this.getAge() + "\n" + 
                 "Credits: " + this.getCredits() + "\n" +
                 "GPA: " + this.getGpa() + "\n" + 
-                "Grade: Freshman" + "\n";
+                "Grade: Senior" + "\n";
         
         return result;
-    }
-}
+    } // End toString.
+} // End Senior class.9
